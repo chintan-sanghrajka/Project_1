@@ -1091,7 +1091,7 @@
 
     /* Start of User Section */
     .user{
-        height: 160vh;
+        height: auto;
     }
     .user_outer_div{
         width: 95%;
