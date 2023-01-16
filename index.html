@@ -15,6 +15,28 @@
 <body>
     <!-- Welcome Section -->
     <section class="welcome">
+        <nav class="navbar">
+            <div class="navbar_logo font">
+                <a href="#" class="btn_dec">Boomerang</a>
+            </div>
+            <div class="navbar_list_div">
+                <label for="checkbox_toggle" class="navbar_sm_icon"><i class="bi bi-list icon"></i></label>
+                <input type="checkbox" id="checkbox_toggle" />
+                <ul class="navbar_list font" id="list_navbar">
+                    <li><a href="about_us.html" class="btn_dec">About Us</a></li>
+                    <li><a href="services.html" class="btn_dec">Services</a></li>
+                    <li>Sign Up</li>
+                    <li>Portfolio</li>
+                    <li>Blog</li>
+                    <li>Shop</li>
+                </ul>
+            </div>
+            <div class="navbar_icon_div">
+                <div class="navbar_inner_icon_div">
+                    <i class="bi bi-cart3"></i>
+                </div>
+            </div>
+        </nav>
         <div class="welcome_main_div">
             <div class="welcome_shadow_div"></div>
             <div class="welcome_content_outer_div">
@@ -33,10 +55,11 @@
     </section>
     <!-- Welcome Section -->
 
-    <!-- Info Section --> 
+    <!-- Info Section -->
     <section class="info">
         <h2 class="font info_heading">Your Site, Your Way.</h2>
-        <p class="font info_para">See how your users experience your website in realtime or view trends to see any changes
+        <p class="font info_para">See how your users experience your website in realtime or view trends to see any
+            changes
             in performance over time.</p>
         <div class="info_image_div">
             <img src="media/info_1.png" alt="">
@@ -79,8 +102,8 @@
     </section>
     <!-- Info Section-->
 
-    <!-- Digital Design Section --> 
-    <!-- <section class="portfolio">
+    <!-- Digital Design Section -->
+    <section class="portfolio">
         <div class="portfolio_heading_div font">
             <h1 class="portfolio_heading">Digital Design.</h1>
             <p class="portfolio_para">See how your users experience your website in realtime or view trends to
@@ -98,10 +121,10 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_1.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>Solave Cleanser</h6>
-                        <p>Digital</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>Solave Cleanser</h6>
+                    <p>Digital</p>
                 </div>
             </div>
             <div class="portfolio_inner_size_div">
@@ -109,10 +132,10 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_2.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>Monochrome</h6>
-                        <p>Branding</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>Monochrome</h6>
+                    <p>Branding</p>
                 </div>
             </div>
             <div class="portfolio_inner_size_div">
@@ -120,10 +143,10 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_3,jpg.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>Ellie Cashman</h6>
-                        <p>Packing</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>Ellie Cashman</h6>
+                    <p>Packing</p>
                 </div>
             </div>
 
@@ -132,10 +155,10 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_4.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>White Sleeve</h6>
-                        <p>Digital</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>White Sleeve</h6>
+                    <p>Digital</p>
                 </div>
             </div>
             <div class="portfolio_inner_size_div">
@@ -143,10 +166,10 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_5.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>Classic socks</h6>
-                        <p>Branding</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>Classic socks</h6>
+                    <p>Branding</p>
                 </div>
             </div>
             <div class="portfolio_inner_size_div">
@@ -154,14 +177,14 @@
                     <div class="portfolio_inner_image_div">
                         <img src="media/portfolio_6.jpg" alt="">
                     </div>
-                    <div class="portfolio_inner_text_div font">
-                        <h6>Experience</h6>
-                        <p>Packing</p>
-                    </div>
+                </div>
+                <div class="portfolio_inner_text_div font">
+                    <h6>Experience</h6>
+                    <p>Packing</p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- Digital Design Section -->
 
     <!-- Options Section -->
@@ -270,7 +293,7 @@
     </section>
     <!-- Features Section -->
 
-    <!-- People Section --> 
+    <!-- People Section -->
     <section class="people">
         <h2 class="people_heading font">Creative People.</h2>
         <p class="people_para font">See how your users experience your website in realtime or view trends to see
@@ -499,132 +522,141 @@
     <!-- Price Section -->
 
     <!-- Article Section -->
-    <section class = "article">
-        <h2 class = "font article_heading">Latest articles.</h2>
-        <p class = "font article_para">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-        <div class = "article_outer_div">
-            <div class = "article_inner_div">
-                <div class = "article_inner_image_div">
+    <section class="article">
+        <h2 class="font article_heading">Latest articles.</h2>
+        <p class="font article_para">See how your users experience your website in realtime or view trends to see any
+            changes in performance over time.</p>
+        <div class="article_outer_div">
+            <div class="article_inner_div">
+                <div class="article_inner_image_div">
                     <img src="media/article_1.jpg" alt="">
                 </div>
-                <h3 class = "font article_inner_heading">Bluetooth Speaker</h3>
-                <p class = "font article_inner_para">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                <a href="#" class = "btn_dec font article_inner_a">Read More</a>
+                <h3 class="font article_inner_heading">Bluetooth Speaker</h3>
+                <p class="font article_inner_para">See how your users experience your website in realtime or view trends
+                    to see any changes in performance over time.</p>
+                <a href="#" class="btn_dec font article_inner_a">Read More</a>
             </div>
-            <div class = "article_inner_div">
-                <div class = "article_inner_image_div">
+            <div class="article_inner_div">
+                <div class="article_inner_image_div">
                     <img src="media/article_2.jpg" alt="">
                 </div>
-                <h3 class = "font article_inner_heading">Minimalist Chandelier</h3>
-                <p class = "font article_inner_para">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                <a href="#" class = "btn_dec font article_inner_a">Read More</a>
+                <h3 class="font article_inner_heading">Minimalist Chandelier</h3>
+                <p class="font article_inner_para">See how your users experience your website in realtime or view trends
+                    to see any changes in performance over time.</p>
+                <a href="#" class="btn_dec font article_inner_a">Read More</a>
             </div>
-            <div class = "article_inner_div">
-                <div class = "article_inner_image_div">
+            <div class="article_inner_div">
+                <div class="article_inner_image_div">
                     <img src="media/article_3.jpg" alt="">
                 </div>
-                <h3 class = "font article_inner_heading">Standard Shape</h3>
-                <p class = "font article_inner_para">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
-                <a href="#" class = "btn_dec font article_inner_a">Read More</a>
+                <h3 class="font article_inner_heading">Standard Shape</h3>
+                <p class="font article_inner_para">See how your users experience your website in realtime or view trends
+                    to see any changes in performance over time.</p>
+                <a href="#" class="btn_dec font article_inner_a">Read More</a>
             </div>
         </div>
     </section>
     <!-- Article Section -->
 
     <!-- User Section -->
-    <section class = "user">
-        <div class = "user_outer_div">
-            <div class = "user_inner_div">
-                <div class = "user_inner_icon_div">
+    <section class="user">
+        <div class="user_outer_div">
+            <div class="user_inner_div">
+                <div class="user_inner_icon_div">
                     <i class="bi bi-lightning-charge"></i>
                 </div>
-                <h3 class = "font user_inner_heading">1,538</h3>
-                <p class = "font user_inner_para">Happy Clients</p>
+                <h3 class="font user_inner_heading">1,538</h3>
+                <p class="font user_inner_para">Happy Clients</p>
             </div>
-            <div class = "user_inner_div">
-                <div class = "user_inner_icon_div">
+            <div class="user_inner_div">
+                <div class="user_inner_icon_div">
                     <i class="bi bi-controller"></i>
                 </div>
-                <h3 class = "font user_inner_heading">2,124</h3>
-                <p class = "font user_inner_para">Total downloads</p>
+                <h3 class="font user_inner_heading">2,124</h3>
+                <p class="font user_inner_para">Total downloads</p>
             </div>
-            <div class = "user_inner_div">
-                <div class = "user_inner_icon_div">
+            <div class="user_inner_div">
+                <div class="user_inner_icon_div">
                     <i class="bi bi-award"></i>
                 </div>
-                <h3 class = "font user_inner_heading">3,128</h3>
-                <p class = "font user_inner_para">Awards Won</p>
+                <h3 class="font user_inner_heading">3,128</h3>
+                <p class="font user_inner_para">Awards Won</p>
             </div>
-            <div class = "user_inner_div">
-                <div class = "user_inner_icon_div">
+            <div class="user_inner_div">
+                <div class="user_inner_icon_div">
                     <i class="bi bi-gem"></i>
                 </div>
-                <h3 class = "font user_inner_heading">9,534</h3>
-                <p class = "font user_inner_para">Theme Users</p>
+                <h3 class="font user_inner_heading">9,534</h3>
+                <p class="font user_inner_para">Theme Users</p>
             </div>
         </div>
-        <div class = "user_image_div">
+        <div class="user_image_div">
             <img src="media/user_image.jpg" alt="">
         </div>
     </section>
     <!-- User Section -->
 
     <!-- Footer Section -->
-    <footer class = "footer">
-        <div class = "footer_outer_div">
-            <div class = "footer_inner_div">
-                <h5 class = "font footer_inner_div_heading">ABOUT US</h5>
-                <p class = "font footer_inner_div_1_para">Map where your photos were taken <br> and discover local points of interest. <br> Map where your photos.</p>
-                <p class = "font footer_inner_div_1_para">Location: 12 London Avenue, Suite 18 <br>
+    <footer class="footer">
+        <div class="footer_outer_div">
+            <div class="footer_inner_div">
+                <h5 class="font footer_inner_div_heading">ABOUT US</h5>
+                <p class="font footer_inner_div_1_para">Map where your photos were taken <br> and discover local points
+                    of interest. <br> Map where your photos.</p>
+                <p class="font footer_inner_div_1_para">Location: 12 London Avenue, Suite 18 <br>
                     E-mail: support@theme.com <br>
                     Phone: 8 800 123 4567</p>
-                <div class = "footer_inner_div_1_icon_div">
+                <div class="footer_inner_div_1_icon_div">
                     <i class="bi bi-twitter"></i>
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-linkedin"></i>
                 </div>
             </div>
-            <div class = "footer_inner_div">
-                <h5 class = "font footer_inner_div_heading">RECENT POST</h5>
-                <p class = "font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.</p>
-                <p class = "font footer_inner_div_2_date">May 8, 2018</p>
-                <div class = "footer_inner_div_2_br"></div>
-                <p class = "font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.</p>
-                <p class = "font footer_inner_div_2_date">April 7, 2018</p>
-                <div class = "footer_inner_div_2_br"></div>
-                <p class = "font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.</p>
-                <p class = "font footer_inner_div_2_date">September 7, 2018</p>
+            <div class="footer_inner_div">
+                <h5 class="font footer_inner_div_heading">RECENT POST</h5>
+                <p class="font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.
+                </p>
+                <p class="font footer_inner_div_2_date">May 8, 2018</p>
+                <div class="footer_inner_div_2_br"></div>
+                <p class="font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.
+                </p>
+                <p class="font footer_inner_div_2_date">April 7, 2018</p>
+                <div class="footer_inner_div_2_br"></div>
+                <p class="font footer_inner_div_2_para">Map where your photos were <br> taken and discover local points.
+                </p>
+                <p class="font footer_inner_div_2_date">September 7, 2018</p>
             </div>
-            <div class = "footer_inner_div">
-                <h5 class = "font footer_inner_div_heading">TWITTER FEED</h5>
+            <div class="footer_inner_div">
+                <h5 class="font footer_inner_div_heading">TWITTER FEED</h5>
             </div>
-            <div class = "footer_inner_div">
-                <h5 class = "font footer_inner_div_heading">PORTFOLIO</h5>
-                <div class = "footer_inner_div_4_outer_div">
-                    <div class = "footer_inner_div_4_inner_div">
+            <div class="footer_inner_div">
+                <h5 class="font footer_inner_div_heading">PORTFOLIO</h5>
+                <div class="footer_inner_div_4_outer_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_1.jpg" alt="">
                     </div>
-                    <div class = "footer_inner_div_4_inner_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_2.jpg" alt="">
                     </div>
-                    <div class = "footer_inner_div_4_inner_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_3.jpg" alt="">
                     </div>
-                    <div class = "footer_inner_div_4_inner_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_4.jpg" alt="">
                     </div>
-                    <div class = "footer_inner_div_4_inner_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_5.jpg" alt="">
                     </div>
-                    <div class = "footer_inner_div_4_inner_div">
+                    <div class="footer_inner_div_4_inner_div">
                         <img src="media/footer_6.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class = "footer_copyright_div">
-           <p class = "font footer_copyright_para">© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#" class = "btn_dec"><span class = "footer_copyright_span">2theme</span></a></p>
+        <div class="footer_copyright_div">
+            <p class="font footer_copyright_para">© 2018 Boomerang, All Rights Reserved. Design with love by <a href="#"
+                    class="btn_dec"><span class="footer_copyright_span">2theme</span></a></p>
         </div>
     </footer>
     <!-- Footer Section -->

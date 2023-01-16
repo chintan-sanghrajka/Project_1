@@ -11,6 +11,74 @@
     color: #fff;
 }
 /* Start of Welcome section */
+
+/* Start of Navbar */
+.navbar{
+    background-color: transparent;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+.navbar_logo{
+    width: 10%;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.navbar_list_div{
+    width: 80%;
+    /* top: 0;
+    left: 10%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+    color: #fff;
+    height: 100%;
+}
+.navbar_list li{
+    border-bottom: solid 1px #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#checkbox_toggle{
+    display: none;
+}
+.navbar_sm_icon{
+    display: none;
+}
+.navbar_icon_div{
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+.navbar_inner_icon_div{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+}
+/* End of Navbar */
+
 .welcome{
     width: 100%;
     height: 100vh;
@@ -38,9 +106,9 @@
     position: absolute;
     width: 100%;
     margin: 0px auto;
-    height: 100%;
+    height: 93%;
     z-index: 2;
-    top: 0;
+    bottom: 0;
 }
 .welcome_content_div{
     display: flex;
@@ -230,6 +298,7 @@
     width: 32.5%;
     height: 600px;
     overflow: hidden;
+    position: relative;
 }
 .portfolio_inner_div{
     width: 100%;
@@ -248,6 +317,12 @@
     text-align: center;
     color: #222;
     padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition-property: all;
+    transition-duration: 500ms;
+    transform: translateY(100px);
 }
 .portfolio_inner_text_div h6{
     font-size: 15px;
@@ -257,6 +332,9 @@
     font-size: 14px;
     font-style: italic;
     color: #788487;
+}
+.portfolio_inner_size_div:hover .portfolio_inner_text_div{
+    transform: translateY(0);
 }
 /* End of Digital Design Section */
 
@@ -630,7 +708,7 @@
     font-size: 20px;
     position: absolute;
     top: 5px;
-    left: 135px;
+    left: 35%;
 }
 .price_inner_price_para{
     color: #788487;
@@ -750,7 +828,6 @@
 .user{
     padding-top: 120px;
     background-color: #f8f8f8;
-    height: 70vh;
 }
 .user_outer_div{
     width: 60%;
@@ -782,7 +859,7 @@
 }
 .user_image_div{
     width: 100%;
-    height: 55vh;
+    height: 65vh;
 }
 .user_image_div img{
     width: 100%;
@@ -886,9 +963,399 @@
 }
 /* End of Footer Section */
 
+
+/* Start of About Us Page */
+
+/* Start of Welcome Section */
+.ab_welcome{
+    width: 100%;
+    height: 70vh;
+    background-image: url("media/About_Wel.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+.ab_shadow_div{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ab_welcome_heading{
+    color: #ffff;
+    font-size: 64px;
+    font-weight: 400;
+    margin: 0 10%;
+    line-height: 1.3;
+}
+.ab_welcome_para{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-top: 20px;
+}
+/* End of Welcome Section */
+
+/* Start of Feaures Section */
+
+.ab_features{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.ab_features_outer_div{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ab_features_inner_div_1{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-right: 2%;
+}
+.ab_features_inner_div_1 img{
+    height: 100%;
+    width: 100%;
+}
+.ab_features_inner_div_2{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 8%;
+}
+.ab_features_inner_content_heading{
+    font-size: 32px;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.3;
+    margin-top: 50px;
+    text-align: left;
+}
+.ab_features_inner_content_para{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    color: #788487;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.ab_features_list{
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    color: #788487;
+}
+.ab_features_list li{
+    margin-bottom: 15px;
+}
+.ab_features_list li span{
+    margin-right: 10px;
+}
+.ab_hr{
+    width: 60%;
+    margin: 0 auto;
+    border-top: solid 1px #f0f0f0;
+    font-size: 10px;
+    margin-bottom: 60px;
+}
+/* End of Features Section */
+
+/* Start of Options Section */
+.ab_options_outer_div{
+    row-gap: 30px;
+}
+.ab_options_inner_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ab_options_inner_icon_div{
+    width: 20%;
+    margin-top: 0 !important;
+}
+.ab_options_inner_content_div{
+    width: 80%;
+}
+.ab_options_inner_content_heading{
+    margin-top: 0 !important;
+    font-size: 16px !important;
+}
+/* End of Options Section */
+
+/* Start of Users Section */
+.ab_user{
+    background-image: url("media/ab_user.jpg");
+    background-attachment: fixed;
+    background-position-x: 200px;
+    height: 40vh;
+}
+.ab_user_main_div{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.ab_user_shadow_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    z-index: 1;
+}
+.ab_user_outer_div{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ab_user_inner_para{
+    margin-top: 8px;
+}
+.ab_color{
+    color: #fff;
+}
+/* End of Users Section */
+
+/* Start of Digital Design Section */
+.ab_design{
+    padding: 120px 0;
+}
+.ab_design_para{
+    letter-spacing: 0.5px !important;
+    margin-bottom: 40px;
+}
+.ab_design_outer_div_1{
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 60vh;
+}
+.ab_design_inner_div_1{
+    width: 65%;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    height: 100%;
+}
+.ab_design_inner_div_2{
+    width: 32%;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    height: 100%;
+}
+.ab_design_inner_div_1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.ab_design_inner_div_2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.ab_design_outer_div_2{
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.ab_design_2_inner_div{
+    width: 31%;
+}
+.ab_design_2_inner_outer_div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.ab_design_2_inner_outer_div h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+}
+.ab_design_2_inner_outer_div h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+.ab_design_2_inner_div p{
+    color: #788487;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+/* End of Digital Design Section */
+
+/* Start of Comment Section */
+.ab_comment_image_div{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    background-image: url("media/ab_comment.jpg");
+    background-position: 50%;
+    background-size:cover;
+}
+.ab_comment_shadow_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.5;
+}
+.ab_comment_inner_para{
+    letter-spacing: 1.5px !important;
+}
+.ab_comment_inner_heading{
+    color: #fff;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+/* End of Comment Section */
+
+/* Start of Logo Section */
+.ab_logo{
+    background-color: #f8f8f8;
+    padding-top: 100px;
+}
+/* End of Logo Section */
+
+/* End of Abount Us page */
+
+/* Start of Services Page */
+
+/* Start of Welcome Section */
+.services_welcome{
+    width: 100%;
+    height: 70vh;
+    background-image: url("media/services_welcome.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+.services_welcome_heading{
+    margin: 0 15%;
+    font-weight: 600;
+}
+/* End of Welcome Section */
+
+/* Start of Digital Design Section */
+.services_design{
+    padding: 120px 0;
+    border: solid 1px #f8f8f8;
+}
+.services_design_image_div{
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+}
+.services_design_image_div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* End of Digital Design Section */
+
+/* Start of Special Treats Section */
+.services_special{
+    padding: 120px 0;
+}
+/* End of Special Treats Section */
+
+/* Start of Features Section */
+.services_features{
+    padding: 120px 0;
+    background-color: #f8f8f8;
+}
+.services_features_image_div{
+    width: 60%;
+    margin: 0 auto;
+}
+.services_features_image_div img{
+    width: 100%;
+}
+/* End of Features Section */
+
+/* Start of Why Work With Us Section */
+.services_work{
+    padding: 120px 0;
+}
+/* End of Why Work With Us Section */
+.services_work_inner_image_div{
+    box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    height: 25.5vh;
+}
+/* End of Services Page */
+
 /* Start of Media query Mobile */
 
 @media screen and (min-width: 320px) and (max-width: 425px){
+
+    /* Start of Navbar */
+
+    .navbar_logo{
+        width: 70%;
+    }
+    .navbar_icon_div{
+        width: 15%;
+        padding-right: 0;
+    }
+    .navbar_list_div{
+        width: 15%;
+    }
+    .navbar_sm_icon{
+        display: block;
+        color: #fff;
+        font-size: 20px;
+    }
+    .navbar_list{
+        display: block;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        transform: translateX(100%);
+        background-color: #222;
+        height: auto;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    .navbar_list li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center;
+        border-bottom: solid 1px #788;
+    }
+    #checkbox_toggle{
+        display: none;
+    }
+    #checkbox_toggle:checked + .navbar_list{
+        transform: translateX(0);
+    }
+
+    /* End of Navbar */
+
     /* Start of Welcome Section */
     .welcome{
         height: 110vh;
@@ -967,7 +1434,49 @@
     /* End of Info Section */
 
     /* Start of Digital Design Section */
-    
+    .portfolio{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .portfolio_heading{
+        margin: 0 10%;
+    }
+    .portfolio_para{
+        margin: 0 4%;
+    }
+    .portfolio_list{
+        gap: 15px;
+    }
+    .portfolio li:not(:last-child)::after{
+        margin-left: 10px;
+    }
+    .portfolio_outer_div{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .portfolio_inner_size_div{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .portfolio_inner_text_div{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transition-property: all;
+        transition-duration: 500ms;
+        transform: translateY(100px);
+    }
+    .portfolio_inner_div:hover{
+        transform: translateY(-100px);
+    }
+    .portfolio_inner_size_div:hover .portfolio_inner_text_div{
+        transform: translateY(0);
+    }
     /* End od Digital Design Section */
 
     /* Start of Options Section */
@@ -1119,7 +1628,101 @@
         width: 100%;
         padding-bottom: 50px;
     }
+    .footer_copyright_para{
+        padding: 0 10%;
+    }
     /* End of Footer Section */
+
+    /* Start of About Us Page */
+
+    /* Start of Welcome Section */
+
+    .ab_welcome{
+        height: 100vh;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .ab_welcome_heading{
+        font-weight: 500;
+        font-size: 32px;
+    }
+    .ab_welcome_para{
+        line-height: 1.8;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 10%;
+        margin-top: 20px;
+    }
+    /* End of Welcome Section */
+
+    /* Start of Features Section */
+
+    /* End of Features Section */
+
+    .ab_features_outer_div{
+        display: block;
+        width: 95%;
+    }
+    .ab_features_inner_div_1{
+        width: 100%;
+    }
+    .ab_features_inner_div_2{
+        width: 100%;
+        padding-left: 4%;
+    }
+
+    /* End of About us Page */
+
+    /* Start of User Section */
+
+    .ab_user{
+        height: 150vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .ab_user_outer_div{
+        padding-top: 20px;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* End of User Section */
+
+    /* Start of Digital Design Section */
+
+    .ab_design{
+        padding-bottom: 80px;
+    }
+    .ab_design_para{
+        margin: 30px 4%;
+        margin-bottom: 50px;
+    }
+    .ab_design_outer_div_1{
+        width: 95%;
+        display: block;
+        height: auto;
+    }
+    .ab_design_inner_div_1{
+        width: 100%;
+        height: 40vh;
+    }
+    .ab_design_inner_div_2{
+        width: 100%;
+        height: 85vh;
+    }
+    .ab_design_outer_div_2{
+        display: block;
+        width: 92%;
+    }
+    .ab_design_2_inner_div{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* End of Digital Design Section */
+
+    /* End of About Us Page */
 
 }
 
