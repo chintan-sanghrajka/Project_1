@@ -1436,7 +1436,7 @@
     /* Start of Digital Design Section */
     .portfolio{
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 0;
     }
     .portfolio_heading{
         margin: 0 10%;
