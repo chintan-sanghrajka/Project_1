@@ -1908,6 +1908,8 @@
 
     .signup_welcome{
         height: 120vh;
+        background-size: cover;
+        background-position-x: center;
     }
     .signup_welcome_input_div{
         width: 100%;
