@@ -1281,6 +1281,48 @@
 .services_special{
     padding: 120px 0;
 }
+.services_special_outer_div{
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services_special_inner_div{
+    width: 48%;
+    /* border: solid 1px; */
+    margin-bottom: 25px;
+}
+.services_special_inner_content_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.services_special_inner_content_div h2{
+    color: #222222;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.services_special_inner_bar_div{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.services_special_inner_bar_1_div{
+    width: 60%;
+    background-color: #505cfd;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.services_special_inner_bar_2_div{
+    width: 80%;
+}
+.services_special_inner_bar_3_div{
+    width: 50%;
+}
 /* End of Special Treats Section */
 
 /* Start of Features Section */
@@ -1301,12 +1343,78 @@
 .services_work{
     padding: 120px 0;
 }
-/* End of Why Work With Us Section */
 .services_work_inner_image_div{
     box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
     height: 25.5vh;
 }
+.services_work_inner_para{
+    line-height: 1.5;
+}
+
+/* End of Why Work With Us Section */
+
 /* End of Services Page */
+
+/* Start of Sign Up Page */
+
+.signup_welcome{
+    height: 100vh;
+    width: 100%;
+    background-image: url("media/signup_welcome.jpg");
+}
+.signup_welcome_heading{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.signup_welcome_input_div{
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.signup_welcome_input{
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, .6);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.signup_welcome_input::placeholder{
+    color: #fff;
+}
+.signup_welcome_input:focus{
+    outline: none;
+}
+.signup_welcome_button{
+    width: 100%;
+    background-color: #505cfd;
+    border: solid 1px #505cfd;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition-property: background-color border color;
+    transition-duration: 1s;
+}
+.signup_welcome_para{
+    font-size: 14px;
+}
+.signup_welcome_button:hover{
+    background-color: #2a39fd;
+    border: solid 1px #2a39fd;
+    color: #fff;
+}
+
+/* End of Sign Up Page */
 
 /* Start of Media query Mobile */
 
@@ -1724,6 +1832,90 @@
 
     /* End of About Us Page */
 
+    /* Start of Services Page */
+
+    /* Start of Welcome Section */
+
+    .services_welcome{
+        height: 100vh;
+        background-size: cover;
+    }
+    .services_welcome_heading{
+        margin: auto 10%;
+    }
+
+    /* End of Welcome Section */
+
+    /* Start of Digital Design Section */
+
+    .services_design_image_div{
+        width: 95%;
+        height: auto;
+        box-shadow: none;
+    }
+    .services_design_image_div img{
+        box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    }
+    .ab_design_2_inner_div{
+        margin-bottom: 40px;
+    }
+
+    /* End of Digital Design Section */
+
+    /* Start of Special Treats Section */
+
+    .services_special{
+        padding-bottom: 80px;
+    }
+    .services_special_outer_div{
+        display: block;
+        width: 90%;
+    }
+    .services_special_inner_div{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /* End of Special Treat Section */
+
+    /* Start of Features Section */
+    .services_features_image_div{
+        width: 90%;
+    }
+    /* End of Features Section */
+
+    /* Start of Work with us Section */
+
+    .services_work_inner_image_div{
+        height: 100%;
+        border-radius: 4px;
+        box-shadow: none;
+    }
+    .services_work_inner_image_div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+    }
+
+    /* End of Work with us Section */
+
+    /* End of Services Page */
+
+    /* Start of Signup Page */
+
+    /* Start of Welcome Section */
+
+    .signup_welcome{
+        height: 120vh;
+    }
+    .signup_welcome_input_div{
+        width: 100%;
+    }
+
+    /* End of Welcome Section */
+
+    /* End of Signup Page */
 }
 
 /* End of Media query Mobile */
