@@ -970,7 +970,7 @@
 .ab_welcome{
     width: 100%;
     height: 70vh;
-    background-image: url("media/About_Wel.jpg");
+    background-image: url("media/about_welcome.jpg");
     position: relative;
     background-attachment: fixed;
     background-position: 50%;
@@ -1500,6 +1500,158 @@
 }
 
 /* End of Portfolio Page */
+
+/* Start of Shop Page */
+
+/* Start of Welcome Section */
+
+.shop_welcome{
+    height: 60vh;
+    background-image: url("media/shop_welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.shop_welcome_content_div{
+    margin-left: 20%;
+}
+.shop_welcome_inner_content_div h2{
+    text-align: left;
+    margin-left: 0;
+}
+.shop_welcome_inner_content_para{
+    text-align: left;
+    margin-left: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.shop_welcome_inner_content_para_e{
+    color: #fff;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+.shop_welcome_inner_content_span{
+    margin: 0 8px;
+    color: rgba(255, 255, 255, .6);
+}
+.shop_welcome_inner_content_para_le{
+    color: rgba(255, 255, 255, .6);
+}
+.shop_welcome_inner_content_para_e:hover{
+    color: rgba(255, 255, 255, .6);
+}
+
+/* End of Welcome Section */
+
+/* Start of Product Section */
+
+.shop_product{
+    padding: 100px 0;
+}
+.shop_product_outer_div{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.shop_product_inner_size_div{
+    width: 31.5%;
+    margin-bottom: 40px;
+}
+.shop_product_inner_div{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.shop_product_inner_image_div{
+    width: 100%;
+}
+.shop_product_inner_image_div img{
+    width: 100%;
+}
+.shop_product_inner_shadow_div{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.shop_product_inner_div:hover .shop_product_inner_shadow_div{
+    background-color: #fff;
+    opacity: 0.5;
+}
+.shop_product_inner_cart_div{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 48%;
+    left: 26%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50px);
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.shop_product_inner_cart_div h6{
+    color: #212529;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.shop_product_inner_div:hover .shop_product_inner_cart_div{
+    transform: translateY(0);
+}
+.shop_product_inner_info_div h6{
+    font-size: 15px;
+    color: #222222;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.shop_product_inner_info_div p{
+    font-size: 15px;
+    color: #788487;
+    letter-spacing: 0.5px;
+    opacity: 0.6;
+}
+.shop_product_page_outer_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.shop_product_page_inner_div{
+    height: 35px;
+    width: 35px;
+    margin: 0 10px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #222;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+.shop_product_page_inner_div_1{
+    color: #fff;
+    background-color: #505cfd;
+}
+.shop_product_page_inner_div:hover{
+    background-color: #f4f4f4;
+}
+.shop_product_page_inner_div_1:hover{
+    background-color: #0416fc;
+}
+
+/* End of Product Section */
+
+/* End of Shop Page */
 
 /* Start of Media query Mobile */
 
@@ -2039,6 +2191,37 @@
     /* End of Portfolio Section */
 
     /* End of Portfolio Page */
+
+    /* Start of Shop Page */
+
+    /* Start of Welcome Section */
+
+    .shop_welcome{
+        background-position-x: 800px;
+    }
+    .shop_welcome_content_div{
+        margin-left: 8%;
+    }
+    .shop_welcome_inner_content_para{
+        margin-left: 0;
+    }
+    /* End of Welcome Section */
+
+    /* Start of Product Section */
+
+    .shop_product_outer_div{
+        width: 90%;
+        display: block;
+    }
+    .shop_product_inner_size_div{
+        width: 100%;
+    }
+    .shop_product_page_inner_div{
+        margin: 0 5px;
+    }
+    /* End of Product Section */
+
+    /* End of Shop Page */
 }
 
 /* End of Media query Mobile */
