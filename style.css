@@ -2203,6 +2203,10 @@
 
     /* Start of Navbar */
 
+
+    .navbar{
+        background-color: #222;
+    }
     .navbar_logo{
         width: 70%;
     }
@@ -2265,11 +2269,11 @@
     #checkbox_toggle{
         display: none;
     }
-    
+
     /* Running Code */
-    #checkbox_toggle:checked + .navbar_list{
+    /* #checkbox_toggle:checked + .navbar_list{
         transform: translateX(0);
-    }
+    } */
     /* Running Code */
 
     #checkbox_toggle:checked + .navbar_list{
